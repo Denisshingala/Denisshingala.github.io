@@ -1,0 +1,296 @@
+:root {
+    --redColor: #fa2a2a;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-bar {
+    display: block;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+    width: 100%;
+    color: white;
+    height: 8vw;
+}
+
+.nav-bar .title {
+    display: block;
+    padding: 0 4vw;
+    font-size: 3.5vw;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.stricky {
+    position: fixed;
+    padding: 0%;
+    background-color: #ff5f5f;
+}
+
+.stricky ul a:hover {
+    color: #111 !important;
+}
+
+.link {
+    width: 100vw;
+    margin-top: 1vw;
+}
+
+.link ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    flex-direction: row;
+    font-size: 1.7vw;
+}
+
+.link ul a {
+    padding: 0 1.5vw;
+    color: white;
+    margin-top: 1.5vw;
+    text-decoration: none;
+    border-bottom: 1px solid none;
+    box-shadow: 0px 15px 10px -20px black;
+    transition: 0.5s all ease-in-out;
+}
+
+.link ul a:hover {
+    color: var(--redColor);
+    border-bottom: 1px solid var(--redColor);
+    box-shadow: 0px 15px 10px -15px var(--redColor);
+}
+
+.profile-img {
+    width: 100vw;
+    height: 46vw;
+    overflow: hidden;
+    background-color: black;
+}
+
+.profile-img .header {
+    color: rgba(255, 255, 255, 0.87);
+    position: absolute;
+    top: 0%;
+    left: 5vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 22vw 0 0 10vw;
+}
+
+.profile-img .header h1, h5 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.profile-img .header h1 {
+    font-size: 3.5vw;
+}
+
+.profile-img .header h5 {
+    font-size: 2vw;
+}
+
+#change {
+    color: var(--redColor);
+}
+
+.heading {
+    font-family: 'Fira Code', monospace;
+}
+
+.about-container {
+    width: 80vw;
+    margin: 0 auto;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-part {
+    display: flex;
+    justify-content: center;
+    width: 145vw;
+    min-height: 20vw;
+    margin-right: 10px;
+}
+
+.about-us {
+    padding: 1vw;
+    margin: 5vw;
+}
+
+.about-us, .about-us .clip {
+    font-size: 1.5vw;
+}
+
+.title-name {
+    width: 100vw;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 500;
+    padding-bottom: 1.5vw;
+}
+
+.title-name .title-body {
+    width: 100vw;
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 0 15px;
+    color: var(--redColor);
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+
+.service {
+    background-color: #111;
+    color: white;
+    padding: 5vw 0;
+}
+
+.service .title-name {
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 25vw;
+    height: 30vw;
+    color: #ff5f5f;
+    font-size: 1.3vw;
+    background-color: rgba(255, 255, 255, 0.075);
+    text-align: center;
+    margin: 20px 10px;
+    padding-top: 5vw;
+    border-radius: 10px;
+    transition: 150ms all ease-in-out;
+}
+
+.service-card:hover {
+    cursor: pointer;
+    color: white !important;
+    background-color: var(--redColor);
+}
+
+.card-title {
+    font-size: 2.5vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100 !important;
+    transition: 200ms all ease-in-out;
+}
+
+.card-body {
+    font-family: 'Rubik', sans-serif;
+    padding: 0%;
+    margin: 0 1.5vw;
+}
+
+.service-card i {
+    padding: 1vw 0;
+    font-size: 5vw;
+    transition: 200ms all ease-in-out;
+}
+
+.skill {
+    padding: 3vw 0;
+}
+
+.skill-container, .contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+
+.skill-left, .contact-left {
+    width: 40vw;
+    padding: 0 4vw;
+}
+
+.skill-left h3, .contact-left h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2vw;
+}
+
+.skill-left p, .contact-left p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3vw;
+}
+
+.skill-right, .contact-right {
+    width: 40vw;
+    padding: 0 1vw;
+    font-size: 1.5vw;
+}
+
+.skill label {
+    padding: 1vw 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contact {
+    background-color: #111;
+    color: white;
+}
+
+.item1 {
+    grid-area: icon;
+    text-align: center;
+    font-size: 2vw;
+    padding: 0.5vw;
+    width: 5vw;
+}
+
+.item2 {
+    grid-area: head;
+    font-size: 1.2vw;
+}
+
+.item3 {
+    grid-area: heading;
+    font-size: 1.2vw;
+}
+
+.info {
+    display: grid;
+    grid-template-areas:
+        'icon head head head head head'
+        'icon heading heading heading heading heading';
+    padding: 1vw 1vw;
+}
+
+.contact-container {
+    padding: 1.5vw;
+}
+
+.contact-right {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+form {
+    font-size: 1vw;
+    font-family: 'Rubik', sans-serif;
+}
+
+form input,textarea{
+    font-size: 1vw !important;
+    padding: 0.1vw !important;
+}
+
+footer{
+    background: linear-gradient(rgb(95, 95, 95),black);
+}
